@@ -10,6 +10,9 @@ The exercises are organized by language and topic, primarily focusing on **Ruby*
 ### **<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" width="24"/> Ruby**
 
 - [Caesar Cipher](./ruby/caesar_cipher)
+- [Sub Strings](./ruby/substrings.rb)
+- [Stock Picker](./ruby/stock_picker.rb)
+- [Bubble Sort](./ruby/bubble_sort.rb)
 
 ### **<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="24"/> JavaScript**
 
