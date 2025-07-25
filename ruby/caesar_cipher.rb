@@ -5,10 +5,10 @@ def caesar_cipher(phrase, shift)
       # Changes character to ASSCI value, subtracts 'a' ASSCI value to get
       # position in alaphabet, adds shift, rounds to a if z, and Changes
       # to shifted character ASSCI value.
-      shifted_char = (char.ord - 'a'.ord + shift) % 26 + 'a'.ord # for lowercase
+      shifted_char = ((char.ord - 'a'.ord + shift) % 26) + 'a'.ord # for lowercase
       shifted_phrase << shifted_char.chr # Adds character to shifted_phrase
     elsif char.match?(/[A-Z]/)
-      shifted_char = (char.ord - 'A'.ord + shift) % 26 + 'A'.ord # for uppercase
+      shifted_char = ((char.ord - 'A'.ord + shift) % 26) + 'A'.ord # for uppercase
       shifted_phrase << shifted_char.chr
     else
       shifted_phrase << char # for special characters and spaces
