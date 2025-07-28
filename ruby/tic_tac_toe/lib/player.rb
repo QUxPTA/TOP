@@ -1,10 +1,5 @@
-# initialize(name, symbol):
-#   store name and symbol
-#
-# get_move(board):
-#   ask  player for input until valid
-#
 module TicTacToe
+  # Defines player logic --> Each player has a symbol
   class Player
     attr_reader :name, :symbol
 

@@ -1,18 +1,3 @@
-# intialize:
-#   create 2 players
-#   create board
-#   set current players
-#
-# play:
-#   loop until game over
-#     show board
-#     ask current player for over
-#     update board
-#     check fo win or draw
-#     switch players
-#   show final board
-#   display result
-#
 require_relative 'board'
 require_relative 'player'
 
