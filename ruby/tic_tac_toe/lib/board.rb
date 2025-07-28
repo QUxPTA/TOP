@@ -27,7 +27,7 @@ module TicTacToe
       puts "\n"
       @grid.each_with_index do |row, i|
         puts row.map.with_index { |cell, j| cell.empty? ? ' ' : cell }.join(' | ')
-        puts '--+--+--' unless i == 2
+        puts '--+---+--' unless i == 2
       end
       puts "\n"
     end
