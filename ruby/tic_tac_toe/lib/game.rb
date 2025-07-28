@@ -1,3 +1,4 @@
+require 'colorize'
 require_relative 'board'
 require_relative 'player'
 
@@ -36,11 +37,11 @@ module TicTacToe
     def game_over?
       if @board.winner?(@current_player.symbol)
         @board.display
-        puts "#{@current_player.name} wins!"
+        puts "#{@current_player.name} wins!".green.bold
         true
       elsif @board.full?
         @board.display
-        puts "It's a draw!"
+        puts "It's a draw!".yellow.bold
         true
       else
         false

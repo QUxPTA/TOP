@@ -1,3 +1,5 @@
+require 'colorize'
+
 module TicTacToe
   # Manages the grid, handles move validation, and checks game state
   class Board
@@ -6,12 +8,26 @@ module TicTacToe
     end
 
     def display
-      puts "\n"
-      @grid.each_with_index do |row, i|
-        puts row.map.with_index { |cell, j| cell.empty? ? ' ' : cell }.join(' | ')
-        puts '--+---+--' unless i == 2
+      # Show Board and guide board side by side
+      symbol_rows = @grid.each_with_index.map do |row, _i|
+        row.map do |cell|
+          case cell
+          when 'X' then 'X'.red
+          when 'O' then 'O'.blue
+          else ' '
+          end
+        end
       end
-      puts "\n"
+      guide_rows = (1..9).each_slice(3).map do |row|
+        row.map { |n| n.to_s.light_black }
+      end
+
+      3.times do |i|
+        left = symbol_rows[i].join(' | ')
+        right = guide_rows[i].join(' | ')
+        puts " #{left}      #{right}"
+        puts ' --+---+--      --+---+--' unless i == 2
+      end
     end
 
     def update(move, symbol)
