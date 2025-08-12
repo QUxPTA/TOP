@@ -25,7 +25,24 @@ module Hangman
     # CLASS METHOD: Load and cache wordlist
     # ================================
     def self.load_wordlist
-      # TODO: Load file, strip words, filter by length, store in @@wordlist
+      # Load file, strip words, filter by length, store in @@wordlist
+      # 1. Return cached list if already loaded
+      return @@wordlist unless @@wordlist.nil?
+
+      # 2. Read the file lines into an array
+      file_path = 'google-10000-english-no-swears.txt'
+      words = File.readlines(file_path, chomp: true)
+
+      # 3. Filter by length (5 - 12) characters
+      filtered_words = words.select do |word|
+        word.length.between?(5, 12)
+      end
+
+      # 4. Store in cache
+      @@wordlist = filtered_words
+
+      # 5. Return wordlist
+      @@wordlist
     end
 
     # ================================
