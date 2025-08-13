@@ -90,14 +90,17 @@ module Hangman
     # INSTANCE METHOD: Check for win
     # ================================
     def won?
-      # TODO: Return true if all letters guessed
+      # Return true if all letters guessed
+      unique_letters = @secret_word.chars.uniq
+      unique_letters.all? { |letter| @correct_guesses.include?(letter) }
     end
 
     # ================================
     # INSTANCE METHOD: Check for loss
     # ================================
     def lost?
-      # TODO: Return true if turns_left == 0
+      # Return true if turns_left == 0
+      @turns_left == 0
     end
   end
 end
