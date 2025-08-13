@@ -74,7 +74,16 @@ module Hangman
     # INSTANCE METHOD: Process a guess
     # ================================
     def make_guess(letter)
-      # TODO: Update correct/incorrect guesses and turns_left
+      # Update correct/incorrect guesses and turns_left
+      letter = letter.downcase
+      return 'Already guessed' if @correct_guesses.include?(letter) || @incorrect_guesses.include?(letter)
+
+      if secret_word.include?(letter)
+        @correct_guesses << letter
+      else
+        @incorrect_guesses << letter
+        @turns_left -= 1
+      end
     end
 
     # ================================
