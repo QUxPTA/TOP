@@ -58,7 +58,16 @@ module Hangman
     # INSTANCE METHOD: Display word with underscores
     # ================================
     def display_progress
-      # TODO: Return string like "_ r o g r a _ _ i n g"
+      # Return string like "_ r o g r a _ _ i n g"
+      display = []
+      secret_word.each_char do |letter|
+        display << if @correct_guesses.include?(letter)
+                     letter
+                   else
+                     '-'
+                   end
+      end
+      display.join(' ')
     end
 
     # ================================
