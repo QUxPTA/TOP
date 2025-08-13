@@ -49,7 +49,9 @@ module Hangman
     # INSTANCE METHOD: Pick a random word from wordlist
     # ================================
     def choose_random_word
-      # TODO: Use self.load_wordlist and return a random word
+      # Use self.load_wordlist and return a random word
+      wordlist = GameState.load_wordlist
+      wordlist.sample
     end
 
     # ================================
