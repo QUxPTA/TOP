@@ -1,3 +1,4 @@
-require_relative 'lib/hangman'
+require_relative 'lib/game'
 
-Hangman::Game
+game = Hangman::Game.new
+game.play
