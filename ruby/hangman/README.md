@@ -22,7 +22,8 @@ A command-line Hangman game built with Ruby. Guess the secret word letter by let
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/QUxPTA/TOP/tree/main/ruby/hangman
+git clone https://github.com/QUxPTA/TOP.git
+cd hangman
 ```
 
 ### 2. Install Dependencies
@@ -33,7 +34,7 @@ Ensure you have Ruby installed (ruby -v), then install gems:
 
 ### 3. Run the Game
 
-`ruby main.rb`
+`bundle exec ruby main.rb`
 
 ## 🧠 How to Play
 
