@@ -19,6 +19,9 @@ puts "Popped: #{list.pop.inspect}" # Expected: nil
 # Test contains? on empty list
 puts "contains?('dog'): #{list.contains?('dog').inspect}" # Expected: false
 
+# Test find on empty list
+puts "find('dog'): #{list.find('dog').inspect}" # Expected: nil
+
 # Test 2: Prepend into empty list
 list = LinkedList.new
 list.prepend('dog')
@@ -37,6 +40,9 @@ puts "Tail again: #{list.tail.value}" # Expected: dog
 puts "contains?('dog'): #{list.contains?('dog').inspect}" # Expected: true
 puts "contains?('cat'): #{list.contains?('cat').inspect}" # Expected: false
 
+# Test find on one node
+puts "find('dog'): #{list.find('dog').inspect}" # Expected: 0
+puts "find('cow'): #{list.find('cow').inspect}" # Expected: nil
 # Test Pop from single-element list
 puts "Popped: #{list.pop.inspect}" # Expected: dog
 puts "List after Pop: #{list}"
@@ -78,10 +84,15 @@ puts list.at(2).value  # Expected: "parrot"
 puts list.at(5).inspect # Expected: nil (out of bounds)
 
 # Test popping a linked_list with nodes
-3.times { puts "Popped: #{list.pop.inspect}" }
-# Expected: "hamster" then "parrot", then "cat"
+2.times { puts "Popped: #{list.pop.inspect}" }
+# Expected: "hamster" then "parrot"
 puts list # Expected: ( dog ) -> nil
 
 # Test contains?
 puts "contains?('dog'): #{list.contains?('dog').inspect}" # Expected: true
 puts "contains?('cow'): #{list.contains?('cow').inspect}" # Expected: false
+
+# Test find
+puts "find('dog'): #{list.find('dog').inspect}" # Expected: 0
+puts "find('cat'): #{list.find('cat').inspect}" # Expected: 1
+puts "find('cow'): #{list.find('cow').inspect}" # Expected: nil
