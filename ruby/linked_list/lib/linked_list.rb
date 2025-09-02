@@ -88,6 +88,16 @@ class LinkedList
     value
   end
 
+  def contains?(value)
+    current = @head
+    until current.nil?
+      return true if current.value == value
+
+      current = current.next_node
+    end
+    false
+  end
+
   class Node
     attr_accessor :value, :next_node
 
