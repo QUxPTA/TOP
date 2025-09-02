@@ -13,6 +13,9 @@ puts "Head: #{list.head.inspect}" # Expected: nil
 # Test tail of empty linked_list
 puts "Tail: #{list.tail.inspect}" # Expected: nil
 
+# Test pop from empty list
+puts "Popped: #{list.pop.inspect}" # Expected: nil
+
 # Test 2: Prepend into empty list
 list = LinkedList.new
 list.prepend('dog')
@@ -21,7 +24,7 @@ puts list
 
 puts "Head: #{list.head.value}" # Expected: dog
 puts "Tail: #{list.tail.value}" # Expected: dog
-puts list.at(0)
+puts list.at(0).value
 
 # Edge case: Repeatedly calling head/tail on single-node list
 puts "Head again: #{list.head.value}" # Expected: dog
