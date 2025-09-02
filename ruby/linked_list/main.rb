@@ -3,16 +3,28 @@ require_relative 'lib/linked_list'
 # Test 1: Empty list
 list = LinkedList.new
 puts list
+# Expected: nil
 
 # Test size of empty linked_list
 puts "linked_list size: #{list.size}" # Expected: 0
-# Expected: nil
+
+# Test head of empty linked_list
+puts "Head: #{list.head.inspect}" # Expected: nil
+# Test tail of empty linked_list
+puts "Tail: #{list.tail.inspect}" # Expected: nil
 
 # Test 2: Prepend into empty list
 list = LinkedList.new
 list.prepend('dog')
 puts list
 # Expected: ( dog ) -> nil
+
+puts "Head: #{list.head.value}" # Expected: dog
+puts "Tail: #{list.tail.value}" # Expected: dog
+
+# Edge case: Repeatedly calling head/tail on single-node list
+puts "Head again: #{list.head.value}" # Expected: dog
+puts "Tail again: #{list.tail.value}" # Expected: dog
 
 # Test 3: Append into empty list
 list = LinkedList.new
@@ -35,7 +47,11 @@ list.append('cat')
 list.append('parrot')
 list.append('hamster')
 puts list
+# Expected: ( dog ) -> ( cat ) -> ( parrot ) -> ( hamster ) -> nil
 
 # Test size of linked_list with nodes
 puts "linked_list size: #{list.size}" # Expected: 4
-# Expected: ( dog ) -> ( cat ) -> ( parrot ) -> ( hamster ) -> nil
+
+# Test head and tail
+puts "Head: #{list.head.value}" # Expected: dog
+puts "Tail: #{list.tail.value}" # Expected: hamster
