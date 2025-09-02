@@ -61,4 +61,4 @@ puts "Tail: #{list.tail.value}" # Expected: hamster
 puts list.at(0).value  # Expected: "dog"
 puts list.at(1).value  # Expected: "cat"
 puts list.at(2).value  # Expected: "parrot"
-puts list.at(5) # Expected: nil (out of bounds)
+puts list.at(5).inspect # Expected: nil (out of bounds)
