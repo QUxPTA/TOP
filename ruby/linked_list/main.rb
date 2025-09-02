@@ -24,11 +24,15 @@ puts list
 
 puts "Head: #{list.head.value}" # Expected: dog
 puts "Tail: #{list.tail.value}" # Expected: dog
-puts list.at(0).value
+puts list.at(0).value # Expected: dog
 
 # Edge case: Repeatedly calling head/tail on single-node list
 puts "Head again: #{list.head.value}" # Expected: dog
 puts "Tail again: #{list.tail.value}" # Expected: dog
+
+# Test Pop from single-element list
+puts "Popped: #{list.pop.inspect}" # Expected: dog
+puts "List after Pop: #{list}"
 
 # Test 3: Append into empty list
 list = LinkedList.new
@@ -65,3 +69,8 @@ puts list.at(0).value  # Expected: "dog"
 puts list.at(1).value  # Expected: "cat"
 puts list.at(2).value  # Expected: "parrot"
 puts list.at(5).inspect # Expected: nil (out of bounds)
+
+# Test popping a linked_list with nodes
+3.times { puts "Popped: #{list.pop.inspect}" }
+# Expected: "hamster" then "parrot", then "cat"
+puts list # Expected: ( dog ) -> nil
