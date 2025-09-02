@@ -47,6 +47,14 @@ class LinkedList
     count
   end
 
+  def tail
+    return nil if @head.nil?
+
+    current = @head
+    current = current.next_node until current.next_node.nil?
+    current
+  end
+
   class Node
     attr_accessor :value, :next_node
 
