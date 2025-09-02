@@ -3,6 +3,9 @@ require_relative 'lib/linked_list'
 # Test 1: Empty list
 list = LinkedList.new
 puts list
+
+# Test size of empty linked_list
+puts "linked_list size: #{list.size}" # Expected: 0
 # Expected: nil
 
 # Test 2: Prepend into empty list
@@ -32,4 +35,7 @@ list.append('cat')
 list.append('parrot')
 list.append('hamster')
 puts list
+
+# Test size of linked_list with nodes
+puts "linked_list size: #{list.size}" # Expected: 4
 # Expected: ( dog ) -> ( cat ) -> ( parrot ) -> ( hamster ) -> nil
