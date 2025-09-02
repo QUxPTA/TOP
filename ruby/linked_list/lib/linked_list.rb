@@ -36,6 +36,17 @@ class LinkedList
     print_linked_list
   end
 
+  def size
+    count = 0
+    current = @head
+
+    until current.nil?
+      count += 1
+      current = current.next_node
+    end
+    count
+  end
+
   class Node
     attr_accessor :value, :next_node
 
