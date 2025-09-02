@@ -98,6 +98,19 @@ class LinkedList
     false
   end
 
+  def find(value)
+    index = 0
+    current = @head
+
+    until current.nil?
+      return index if current.value == value
+
+      current = current.next_node
+      index += 1
+    end
+    nil # If value is absent
+  end
+
   class Node
     attr_accessor :value, :next_node
 
