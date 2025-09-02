@@ -16,6 +16,9 @@ puts "Tail: #{list.tail.inspect}" # Expected: nil
 # Test pop from empty list
 puts "Popped: #{list.pop.inspect}" # Expected: nil
 
+# Test contains? on empty list
+puts "contains?('dog'): #{list.contains?('dog').inspect}" # Expected: false
+
 # Test 2: Prepend into empty list
 list = LinkedList.new
 list.prepend('dog')
@@ -29,6 +32,10 @@ puts list.at(0).value # Expected: dog
 # Edge case: Repeatedly calling head/tail on single-node list
 puts "Head again: #{list.head.value}" # Expected: dog
 puts "Tail again: #{list.tail.value}" # Expected: dog
+
+# Test contains? on one node
+puts "contains?('dog'): #{list.contains?('dog').inspect}" # Expected: true
+puts "contains?('cat'): #{list.contains?('cat').inspect}" # Expected: false
 
 # Test Pop from single-element list
 puts "Popped: #{list.pop.inspect}" # Expected: dog
@@ -74,3 +81,7 @@ puts list.at(5).inspect # Expected: nil (out of bounds)
 3.times { puts "Popped: #{list.pop.inspect}" }
 # Expected: "hamster" then "parrot", then "cat"
 puts list # Expected: ( dog ) -> nil
+
+# Test contains?
+puts "contains?('dog'): #{list.contains?('dog').inspect}" # Expected: true
+puts "contains?('cow'): #{list.contains?('cow').inspect}" # Expected: false
