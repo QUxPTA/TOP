@@ -55,6 +55,22 @@ class LinkedList
     current
   end
 
+  def at(index)
+    return nil if index.negative? # Check for negative indices
+
+    current = @head
+    count = 0
+
+    until current.nil?
+      return current if count == index
+
+      current = current.next_node
+      count += 1
+    end
+
+    nil # return nil if index is out of bounds
+  end
+
   class Node
     attr_accessor :value, :next_node
 
