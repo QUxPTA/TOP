@@ -23,6 +23,19 @@ class LinkedList
     end
   end
 
+  def to_s
+    current = @head
+    print_linked_list = ''
+
+    until current.nil?
+      print_linked_list << "( #{current.value} ) -> "
+      current = current.next_node # Move to next_node
+    end
+
+    print_linked_list << 'nil'
+    print_linked_list
+  end
+
   class Node
     attr_accessor :value, :next_node
 
