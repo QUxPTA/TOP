@@ -21,6 +21,7 @@ puts list
 
 puts "Head: #{list.head.value}" # Expected: dog
 puts "Tail: #{list.tail.value}" # Expected: dog
+puts list.at(0)
 
 # Edge case: Repeatedly calling head/tail on single-node list
 puts "Head again: #{list.head.value}" # Expected: dog
@@ -55,3 +56,9 @@ puts "linked_list size: #{list.size}" # Expected: 4
 # Test head and tail
 puts "Head: #{list.head.value}" # Expected: dog
 puts "Tail: #{list.tail.value}" # Expected: hamster
+
+# Test at(index)
+puts list.at(0).value  # Expected: "dog"
+puts list.at(1).value  # Expected: "cat"
+puts list.at(2).value  # Expected: "parrot"
+puts list.at(5) # Expected: nil (out of bounds)
