@@ -71,6 +71,23 @@ class LinkedList
     nil # return nil if index is out of bounds
   end
 
+  def pop
+    return nil if @head.nil? # Empty list -> nothing to pop
+
+    if @head.next_node.nil? # Only one element
+      value = @head.value
+      @head = nil
+      return value
+    end
+    # For more that one element -> traverse to second-last node
+    current = @head
+    current = current.next_node until current.next_node.next_node.nil?
+
+    value = current.next_node.value  # Save tail value
+    current.next_node = nil          # Remove last node
+    value
+  end
+
   class Node
     attr_accessor :value, :next_node
 
