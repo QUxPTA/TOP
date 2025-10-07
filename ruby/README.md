@@ -81,3 +81,27 @@ and Merge Sort.
 - `merge_sort.rb`: Implements the Merge sort algorithm using recursion
 
 ---
+
+## 7. [Hangman](./hangman/)
+
+**Description:**
+A command-line Hangman game with features like word saving/loading
+and colorful output
+
+**Implementation Details:**
+
+- Uses `main.rb` as entry point.
+- Relies on `Gemfile` for dependencies like `colorize`.
+
+---
+
+## 8. [Tic Tac Toe](./tic_tac_toe/)
+
+**Description:**
+A two-player command-line Tic Tac Toe game with input validation and
+a colorized interface.
+
+**Implementation Details:**
+
+- Uses `main.rb` as the entry point.
+- Relies on `Gemfile` for dependencies like `colorize`.

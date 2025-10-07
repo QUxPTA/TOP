@@ -14,6 +14,8 @@ The exercises are organized by language and topic, primarily focusing on **Ruby*
 - [Stock Picker](./ruby/stock_picker.rb)
 - [Bubble Sort](./ruby/bubble_sort.rb)
 - [Linked List](./ruby/linked_list/)
+- [Recursion (Fibonacci)](./ruby/recursion_solution/fibonacci.rb)
+- [Recursion (Merge Sort)](./ruby/recursion_solution/merge_sort.rb)
 - [Hangman](/ruby/hangman/README.md)
 - [Tic Tac Toe](/ruby/hangman/README.md)
 
