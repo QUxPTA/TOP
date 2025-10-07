@@ -33,12 +33,18 @@ Player1 (X) wins!
 
 ```bash
 git clone git@github.com:QUxPTA/TOP.git
-cd ruby/tic_tac_toe
+cd ruby/tic_tac-toe
 ```
 
 ### 2. Install Dependencies
 
-Ensure you have Ruby installed (ruby -v), then:
+Ensure you have Ruby installed (ruby -v), then:`
+
+```bash
+gem install colorize
+```
+
+Or, if using Bundler:
 
 ```bash
 bundle install
@@ -47,7 +53,7 @@ bundle install
 ### 3. Run the Game
 
 ```bash
-ruby main.rb
+bundle exec ruby main.rb
 ```
 
 ## 🧠 How to Play

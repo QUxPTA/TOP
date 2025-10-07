@@ -13,6 +13,9 @@ The exercises are organized by language and topic, primarily focusing on **Ruby*
 - [Sub Strings](./ruby/substrings.rb)
 - [Stock Picker](./ruby/stock_picker.rb)
 - [Bubble Sort](./ruby/bubble_sort.rb)
+- [Linked List](./ruby/linked_list/)
+- [Hangman](/ruby/hangman/README.md)
+- [Tic Tac Toe](/ruby/hangman/README.md)
 
 ### **<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="24"/> JavaScript**
 
@@ -33,6 +36,8 @@ The exercises are organized by language and topic, primarily focusing on **Ruby*
    cd ruby/caesar_cipher
    ```
 
+   _(Note: For projects in subdirectories like `linked_list`, `hangman`, or `tic_tac_toe`, navigate into those directories accordingly, e.g., `cd ruby/hangman`)_
+
 3. **Run the code**
    - **For Ruby:**
 
@@ -40,6 +45,7 @@ The exercises are organized by language and topic, primarily focusing on **Ruby*
    ruby caesar_cipher.rb
    ```
 
+   _(Note: Some projects may use `main.rb` or require `bundle exec ruby <file>`)_
    - **For JavaScript:**
 
    ```javascript

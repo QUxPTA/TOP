@@ -1,6 +1,6 @@
 # 🎲 Hangman – Ruby CLI Edition
 
-A command-line Hangman game built with Ruby. Guess the secret word letter by letter, but be careful — too many wrong guesses and you lose! Includes colorful prompts, word persistence, and the ability to save and resume your game.
+A command-line Hangman game built with Ruby. Guess the secret word letter by letter, but be careful, too many wrong guesses and you lose! Includes colorful prompts, word persistence, and the ability to save and resume your game.
 
 ## ✨ Features
 
@@ -23,7 +23,7 @@ A command-line Hangman game built with Ruby. Guess the secret word letter by let
 
 ```bash
 git clone https://github.com/QUxPTA/TOP.git
-cd hangman
+cd ruby/hangman
 ```
 
 ### 2. Install Dependencies

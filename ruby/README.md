@@ -56,3 +56,28 @@ Implements the bubble sort algorithm to sort an array of numbers in ascending or
 - Sorts in-place and handles any numeric array.
 
 ---
+
+## 5. [Linked List](./linked_list/)
+
+**Description:**
+A basic implementation of a singly linked list data structure in Ruby.
+
+**Implementation Details:**
+
+- Supports operations like appending, prepending, searching, and removing nodes.
+- Includes a `main.rb` for demonstration, with hard-coded test cases
+
+---
+
+## 6. [Recursion Solution](./recursion_solution/)
+
+**Description:**
+Contains implementations of recursive algorithms, including Fibonacci sequence
+and Merge Sort.
+
+**Implementation Details:**
+
+- `Fibonacci.rb`: Calculates Fibonacci sequence using recursion
+- `merge_sort.rb`: Implements the Merge sort algorithm using recursion
+
+---
