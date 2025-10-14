@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,27 +8,23 @@
   </head>
   <body>
     <aside>
-      <div>
+      <div class="background">
         <img
           src="./images/halie-west-25xggax4bSA-unsplash.jpg"
           alt="Green leaf plant image(used as background)"
-          class="background"
         />
         <p>
           Photo by
           <a
             href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
-            >Halie West</a
           >
+            Halie West
+          </a>
           on <a href="https://unsplash.com">Unsplash</a>
         </p>
       </div>
-      <span>
-        <img
-          src="./images/odin-lined.png"
-          alt="The Odin Project logo"
-          class="foreground"
-        />
+      <span class="foreground">
+        <img src="./images/odin-lined.png" alt="The Odin Project logo" />
         <p class="Norse">ODIN</p>
       </span>
     </aside>
@@ -46,34 +42,48 @@
         <div class="forms">
           <div class="form-field">
             <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name" />
+            <input type="text" name="first-name" id="first-name" required />
           </div>
           <div class="form-field">
             <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="phone-number" />
+            <input type="text" name="last-name" id="last-name" required />
           </div>
           <div class="form-field">
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="phone-number" />
+            <input type="email" name="email" id="email" required />
           </div>
 
           <div class="form-field">
             <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" name="phone-number" id="phone-number" />
+            <input type="tel" name="phone-number" id="phone-number" required />
           </div>
           <div class="form-field">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+              title="Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, and one number"
+            />
           </div>
           <div class="form-field">
             <label for="password">CONFIRM PASSWORD</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+              title="Passwords must match!"
+            />
           </div>
         </div>
       </div>
       <div class="call-to-action">
         <button>Create Account</button>
-        <p>Already have an account? <a href="">log in</a></p>
+        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </aside>
   </body>
