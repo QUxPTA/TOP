@@ -23,6 +23,8 @@ The exercises are organized by language and topic, primarily focusing on **Ruby*
 
 ### **<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="24"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="24"/> HTML & CSS**
 
+- [Sign-up Form](./HTML_CSS/sign-up_form/)
+
 ---
 
 ## 🚀 Getting Started
