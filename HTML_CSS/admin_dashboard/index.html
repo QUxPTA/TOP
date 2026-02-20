@@ -3,8 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Admin Dashboard</title>
   </head>
-  <body></body>
+  <body class="grid">
+    <aside class="sidebar-grid">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <a href="" class="dashboard-link"
+            ><img src="./images/view-dashboard.svg" alt="Dashboard icon" />
+            Dashboard
+          </a>
+        </div>
+        <div class="sidebar-functionalities">
+          <a href="" class="sidebar-link">
+            <img src="./images/home.svg" alt="Home icon" /> Home
+          </a>
+          <a href="" class="sidebar-link">
+            <img
+              src="./images/card-account-details-outline.svg"
+              alt="Profile icon"
+            />
+            Profile
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="./images/message-reply.svg" alt="Messages icon" />
+            Messages
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="./images/clock-time-three.svg" alt="History icon" />
+            History
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="./images/file-multiple.svg" alt="Tasks icon" />
+            Tasks
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="./images/account-group.svg" alt="Communities icon" />
+            Communities
+          </a>
+        </div>
+        <div class="sidebar-utilities">
+          <a href="" class="sidebar-link">
+            <img src="./images/cog.svg" alt="Settings icon" />
+            Settings
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="./images/help-box.svg" alt="Support icon" />
+            Support
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="./images/shield-check.svg" alt="Privacy icon" />
+            Privacy
+          </a>
+        </div>
+      </div>
+    </aside>
+    <header class="header-grid">
+      <div class="top">
+        <img src="./images/magnify.svg" alt="Search icon" />
+        <form action="submit" role="searchbox">
+          <input type="search" name="searchbox" id="searchbox" />
+        </form>
+        <img src="./images/bell-ring-outline.svg" alt="Notification icon" />
+      </div>
+      <div class="bottom"></div>
+    </header>
+    <article class="content-grid"></article>
+  </body>
 </html>

@@ -1,0 +1,135 @@
+/* CSS reset */
+/* --------------------------------------------------------------- */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ------------------------------------------------- */
+/* My Styles */
+/* ------------------------------------------------- */
+
+/* Grid Definition */
+/* ------------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-areas:
+    "sidebar-grid   header-grid    header-grid    header-grid     header-grid"
+    "sidebar-grid   content-grid   content-grid   content-grid    content-grid"
+    "sidebar-grid   content-grid   content-grid   content-grid    content-grid"
+    "sidebar-grid   content-grid   content-grid   content-grid    content-grid"
+    "sidebar-grid   content-grid   content-grid   content-grid    content-grid";
+    height: 100vh;
+}
+
+/* Sidebar styles */
+/* ---------------------------------------------- */
+img {
+  width: 1.2em;
+  height: auto;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-areas:
+    "sidebar-header"
+    "sidebar-functionalities"
+    "sidebar-utilities";
+  gap: 2rem;
+  background-color: #1992d4;
+  font-weight: bold;
+  padding: 1em;
+  height: 100vh;
+}
+.sidebar img {
+  filter: invert(100%);
+}
+.sidebar a {
+  color: white;
+}
+
+.dashboard-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.sidebar-link {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
